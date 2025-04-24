@@ -82,4 +82,4 @@ huggingface-cli --help
 
 ## 6. Setup the Toolkit Container
 
-[podman toolkit](exercises/podman-toolkit)
+[podman toolkit](exercises/podman-toolkit.md)
