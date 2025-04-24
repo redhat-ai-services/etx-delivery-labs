@@ -43,4 +43,3 @@ _(Add content or link here when ready.)_
 ## 📊 Evals Exercise
 
 1. [Evals Repository](https://github.com/HunterGerlach/evals)
-"""
