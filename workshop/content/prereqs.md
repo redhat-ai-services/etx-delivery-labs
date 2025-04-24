@@ -1,6 +1,11 @@
 
 # 🛠️ Prerequisite Setup
 
+> ⚠️ **Note:** If you plan to use the [Toolkit Container](exercises/podman-toolkit.md), you can skip the local installations of Podman, Ollama, Docling, HuggingFace CLI, and Node.js below.  
+> The container includes all necessary tools preinstalled for a streamlined setup.
+
+---
+
 ## 1. Install Podman Desktop
 
 Podman Desktop is a container management tool similar to Docker, but daemonless.
@@ -82,4 +87,4 @@ huggingface-cli --help
 
 ## 6. Setup the Toolkit Container
 
-[podman toolkit](exercises/podman-toolkit.md)
+👉 Use this container to skip manual setup: [Podman Toolkit Guide](exercises/podman-toolkit.md)
