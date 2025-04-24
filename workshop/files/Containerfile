@@ -21,10 +21,13 @@ RUN dnf -y update && \
     unzip \
     podman \
     skopeo \
+    jq \
+    tmux \
     java-17-openjdk-devel \
     && dnf clean all
 
 USER 1001
+
 # Install Python environment managers and tools
 RUN pip install --upgrade pip && \
     pip install \
@@ -40,16 +43,21 @@ RUN pip install --upgrade pip && \
     faiss-cpu
 
 # Install docling with PyTorch CPU support
+# Run via: docling
 RUN pip install docling --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Install docling-serve with UI support
-# Note: This will start the docling-serve UI on port 8080
+# Run via: docling-serve run --enable-ui
+# Note: This will start the docling-serve UI on port 50001
 RUN pip install "docling-serve[ui]"
 
 # Install HuggingFace ClI
+# Run via: huggingface-cli
 RUN pip install "huggingface_hub[cli]"
 
 # Install VSCode YAML linter extension (Red Hat)
+# Run via: code-server --bind-addr 0.0.0.0:8080 --auth none
+# Note: This will start the vscode server UI on port 8080 without requiring a password
 RUN code-server --install-extension redhat.vscode-yaml
 
 USER root
@@ -60,12 +68,15 @@ RUN curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/op
     rm -f openshift-client-linux.tar.gz
 
 # Install AWS CLI
+# Run via: aws
 RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" && \
     unzip awscliv2.zip && \
     ./aws/install && \
     rm -rf awscliv2.zip aws
 
 # Install Ollama (Needs SuperUser privileges)
+# Run via: export OLLAMA_HOST=0.0.0.0 && ollama serve
+# Note: This will start the ollama server on port 11434
 RUN curl -fsSL https://ollama.com/install.sh | sh
 
 # Install AnythingLLM
@@ -82,6 +93,8 @@ RUN curl -Ls https://sh.jbang.dev | bash -s - trust add https://repo1.maven.org/
 # Optional: Pull LangChain4j starter project (Java)
 RUN git clone https://github.com/langchain4j/langchain4j-examples.git langchain4j-examples
 
+# Expose port for ollama
+EXPOSE 11434
 
 # Expose port for docling-serve UI
 EXPOSE 5001

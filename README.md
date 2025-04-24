@@ -19,7 +19,7 @@ This workshop is designed for developers, architects, and operations teams looki
 ## 🧰 Prerequisites
 
 Before you begin, make sure you’ve completed all setup steps outlined in the  
-👉 [Prerequisites Section](workshop/content/prereqs)
+👉 [Prerequisites Section](workshop/content/prereqs.md)
 
 ---
 
