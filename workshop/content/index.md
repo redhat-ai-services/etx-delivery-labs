@@ -5,7 +5,7 @@ These labs provide a hands-on introduction to modern AI/ML practices.
 
 We’ll explore tools like **Podman**, **Docling**, **RHELAI**, and **OpenShift** to test and benchmark various AI configurations and settings.
 
-📌 **Before you begin**, make sure you’ve completed all the steps in the [Prerequisites](prereqs) section.
+📌 **Before you begin**, make sure you’ve completed all the steps in the [Prerequisites](prereqs.md) section.
 
 Once you have the necessary software and access, continue with the exercises below.
 
