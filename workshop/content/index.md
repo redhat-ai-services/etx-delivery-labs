@@ -1,30 +1,46 @@
-# Introdution
+# 🧠 Introduction
 
-These workshop exersises provide an introduction to AI/ML practices. 
+Welcome to the AI/ML workshop exercises!  
+These labs provide a hands-on introduction to modern AI/ML practices.
 
-In these labs we'll use Podman, Docling, RHELAI & OpenShift to test and benchmark various AI configurations and settings. 
+We’ll explore tools like **Podman**, **Docling**, **RHELAI**, and **OpenShift** to test and benchmark various AI configurations and settings.
 
-Make sure to read the prerequisites section before starting. 
+📌 **Before you begin**, make sure you’ve completed all the steps in the [Prerequisites](prereqs) section.
 
-After making sure you have the appropriate software and access procceed to the next section. 
+Once you have the necessary software and access, continue with the exercises below.
 
-## Instructlab exercises 
-1. [Instructlab section 1.0](exercises/instructlab-1.0)
-2. [Instructlab section 1.1](exercises/instructlab-1.1)
-3. [Instructlab section 1.2](exercises/instructlab-1.2)
+---
 
-## Prompt engineering exercises
-1. [Prompt engineering techniques](exercises/advanced-prompting)
-2. [Prompt engineering with music](exercises/suno-sound-ai)
+## 🧪 InstructLab Exercises
 
-## Composer AI exercise
+1. [InstructLab Section 1.0](exercises/instructlab-1.0)
+2. [InstructLab Section 1.1](exercises/instructlab-1.1)
+3. [InstructLab Section 1.2](exercises/instructlab-1.2)
 
+---
 
-## AI guardrails 
-1. [llm Prompt Response Guardrail](https://gitlab.consulting.redhat.com/bbalasub/llm-prompt-response-guardrail)
-2. [llm TrustyAI Guardrails](https://gitlab.consulting.redhat.com/bbalasub/llm-trustyai-guardrails-lmeval)
-3. [AI security guardrails](exercises/ai-security-prompting)
+## 🎯 Prompt Engineering Exercises
 
-## Evals exercise
+1. [Prompt Engineering Techniques](exercises/advanced-prompting)
+2. [Prompt Engineering with Music](exercises/suno-sound-ai)
 
-1. [Evals](https://github.com/HunterGerlach/evals)
+---
+
+## 🎼 Composer AI Exercise
+
+_(Add content or link here when ready.)_
+
+---
+
+## 🛡️ AI Guardrails
+
+1. [LLM Prompt Response Guardrail](https://gitlab.consulting.redhat.com/bbalasub/llm-prompt-response-guardrail)
+2. [LLM TrustyAI Guardrails](https://gitlab.consulting.redhat.com/bbalasub/llm-trustyai-guardrails-lmeval)
+3. [AI Security Guardrails](exercises/ai-security-prompting)
+
+---
+
+## 📊 Evals Exercise
+
+1. [Evals Repository](https://github.com/HunterGerlach/evals)
+"""
