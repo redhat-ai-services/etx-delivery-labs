@@ -47,7 +47,21 @@ Use `bash` to open a shell inside the container:
 podman exec -it ai-tools-container bash
 ```
 
-Now you're inside the container and ready to explore or run AI tools.
+Now you're inside the container and ready to explore or run AI tools.  
+To start the Docling frontend UI:
+
+```bash
+docling-serve run --enable-ui
+```
 
 ---
+
+## 🌐 5. Access Docling UI from Localhost
+
+Once the container is running and Docling UI is started, visit:
+
+👉 [http://localhost:5001/ui/](http://localhost:5001/ui/)
+
+---
+
 

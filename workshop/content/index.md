@@ -28,7 +28,7 @@ Once you have the necessary software and access, continue with the exercises bel
 
 ## 🎼 Composer AI Exercise
 
-_(Add content or link here when ready.)_
+1. [Composer AI](exercises/composer-ai.md)
 
 ---
 
