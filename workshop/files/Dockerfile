@@ -30,18 +30,17 @@ USER 1001
 
 # Install Python environment managers and tools
 RUN pip install --upgrade pip && \
-    pip install \
-    micropipenv \
-    uv \
-    poetry \
-    jupyter \
-    promptfoo \
-    langchain \
-    llama-index \
-    vllm \
-    chromadb \
-    faiss-cpu
-
+    pip install micropipenv && \
+    pip install uv && \
+    pip install poetry && \
+    pip install jupyter && \
+    pip install promptfoo && \
+    pip install langchain && \
+    pip install llama-index && \
+    pip install vllm && \
+    pip install chromadb && \
+    pip install faiss-cpu
+    
 # Install docling with PyTorch CPU support
 # Run via: docling
 RUN pip install docling --extra-index-url https://download.pytorch.org/whl/cpu
