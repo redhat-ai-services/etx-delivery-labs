@@ -42,7 +42,7 @@ jobs:
         pull: true
         push: true
         tags: |
-         quay.io/redhat-ai-services/image:latest
+         quay.io/redhat-ai-services/rhai-toolbox:latest
 
     - name: Print image url
       run: echo "Image pushed to ${{ steps.push-to-quay.outputs.registry-paths }}"
