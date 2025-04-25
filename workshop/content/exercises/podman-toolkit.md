@@ -10,8 +10,7 @@ This guide walks you through downloading, setting up, and running the **AI Toolk
 > ⏬ **Note**: This image is large (~10GB)
 
 ```bash
-podman pull quay.io/bcarr/ai-tools
-```
+podman pull quay.io/redhat-ai-services/rhai-toolbox
 
 ---
 
@@ -34,7 +33,7 @@ podman run -dit \
   --name ai-tools-container \
   -p 5001:5001 \
   -v ~/podman-shared:/mnt/shared \
-  quay.io/bcarr/ai-tools
+  quay.io/redhat-ai-services/rhai-toolbox
 ```
 
 ---
