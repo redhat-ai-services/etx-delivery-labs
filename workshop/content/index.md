@@ -13,16 +13,16 @@ Once you have the necessary software and access, continue with the exercises bel
 
 ## 🧪 InstructLab Exercises
 
-1. [InstructLab Section 1.0](exercises/instructlab-1.0)
-2. [InstructLab Section 1.1](exercises/instructlab-1.1)
-3. [InstructLab Section 1.2](exercises/instructlab-1.2)
+1. [InstructLab Section 1.0](exercises/instructlab-1.0.md)
+2. [InstructLab Section 1.1](exercises/instructlab-1.1.md)
+3. [InstructLab Section 1.2](exercises/instructlab-1.2.md)
 
 ---
 
 ## 🎯 Prompt Engineering Exercises
 
-1. [Prompt Engineering Techniques](exercises/advanced-prompting)
-2. [Prompt Engineering with Music](exercises/suno-sound-ai)
+1. [Prompt Engineering Techniques](exercises/advanced-prompting.md)
+2. [Prompt Engineering with Music](exercises/suno-sound-ai.md)
 
 ---
 
