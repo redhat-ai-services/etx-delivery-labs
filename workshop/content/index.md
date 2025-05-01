@@ -36,7 +36,7 @@ Once you have the necessary software and access, continue with the exercises bel
 
 1. [LLM Prompt Response Guardrail](exercises/llm-prompt-response-guardrail.md)
 2. [LLM TrustyAI Guardrails](https://gitlab.consulting.redhat.com/bbalasub/llm-trustyai-guardrails-lmeval)
-3. [AI Security Guardrails](exercises/ai-security-prompting)
+3. [AI Security Guardrails](exercises/ai-security-prompting.md)
 
 ---
 
