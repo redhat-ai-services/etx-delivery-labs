@@ -1,0 +1,20 @@
+using the following guidelines, create 3 question and answer pairs
+
+Questions
+Focus on key details or insights within the context section
+Create diverse questions. Include a variety of question types like fact-based, reasoning, or clarification questions.
+Each question should be self-contained, including all needed information, and not rely on any additional context (such as multi-turn chat history)
+Use clear and concise language
+The questions should reflect the kinds of questions we expect the aligned model to be able to answer.
+
+Answers
+Avoid single word or yes/no answers. Even if the question has a one-word answer, provide a full sentence. This sets the style for how the teacher model will generate similar pairs of Q&A.
+Make sure the answers are directly relevant to the questions.
+Answers should be detailed.
+If the answer requires reasoning, ensure to include the step-by-step reasoning within the answer content.
+Try to reference the question for additional clarity.
+Answers should represent the type of answers the model should be able to provide based on the context chunk.
+Answers should not be verbatim from the context section as the model will learn to extract instead of reason and generate.
+Answers must include facts contained in context and not reference facts outside of context or the model will learn to hallucinate.
+
+{{YOUR_CONTEXT_HERE}}

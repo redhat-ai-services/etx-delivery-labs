@@ -28,7 +28,7 @@ In this section, you'll create a structured `qna.yaml` file that forms the basis
 6. ✅ Add a **second context** section from your knowledge document
 7. ✅ Add a `questions_and_answers` section under the second context
 8. ✅ Add **three** additional Q&A pairs for the second context
-9. ✅ Collaborate with **John/Noel** to use their QnA pipeline tooling to complete the **remaining 3 context sections** and their **Q&A pairs**
+9. ✅ Use either **John/Noel's QnA pipeline tooling** or **Mike's [qna prompt](../../files/qna_prompt.txt)** to complete the **remaining 3 context sections** and their **Q&A pairs**
 
 ---
 
