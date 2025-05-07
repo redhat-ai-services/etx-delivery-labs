@@ -2,14 +2,6 @@
 
 In this lab, we will be using neo4j's graph builder to augment our model with data fetched from a graph database. We will also use Neo4j's graph builder to parse plain text and turn it into a graph that will be inserted in the database. 
 
-## Prerequisite
-
-You need Ollama running and accesible on `http://localhost:11434` on your local environment. Your Ollama server needs to host the `llama3` model. You can check that ollama is running by running the following command:
-
-```
-curl http://localhost:11434
-``` 
-
 ## 🛠️ Setting up the environment
 
 1. Go into the `workshop/files/graphrag/` folder.
@@ -45,4 +37,6 @@ cd workshop/files/graphrag/
 
 3. Once the file has been sucessfully uploaded, click on the checkbox to select it, then click `Generate Graph (1)` at the bottom of the screen. 
 
-4. Once the graph has been generated, click on the graph button in the `Actions` column to view the graph. You can also ask questions about your graph in the Chat on the right side, such as `Who can evolve into Charizard?`
+4. Once the graph has been generated, click on the graph button in the `Actions` column to view the graph. You can also ask questions about your graph in the Chat on the right side, such as `Is Wartortle a Pokemon?`
+
+> To stop all containers in the pod, use the command `podman pod stop graphrag`

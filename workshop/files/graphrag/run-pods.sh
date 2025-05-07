@@ -1,15 +1,11 @@
 #!/bin/sh
 podman pod stop -i graphrag
 
-#ensure ollama is running
-# if curl -s -o /dev/null -I "http://localhost:11434"; then
-#   echo "Ollama is running on localhost:11434. Good!"
-# else
-#   echo "Ollama is NOT running on localhost:11434 (curl)."
-#   exit 1 # Failure
-# fi
-
-
+# Pull needed images
+podman pull ollama/ollama
+podman pull quay.io/gradde/llm-graph-builder-backend:v0.8
+podman pull quay.io/gradde/llm-graph-builder-frontend:latest
+podman pull neo4j:5.26.5-community
 
 
 
@@ -20,9 +16,8 @@ podman pod create --replace --name graphrag \
 
 
 # Run ollama
-podman pull ollama/ollama
 podman run -d --name ollama --replace --pod graphrag ollama/ollama
-#podman exec -it ollama ollama run llama3
+podman exec ollama ollama run llama3
 
 
 #neo4j
@@ -46,4 +41,7 @@ podman run -d --pod graphrag --replace --name llm-graph-builder-backend \
   quay.io/gradde/llm-graph-builder-frontend:latest 
   
    # then select neo4j (not s in protocol) and guillaume-p1g4:7687 in connection
+
+echo "\n"
+echo "Neo4j is running on http://localhost:7474"
 echo "Neo4j graph builder is running on http://localhost:8080"
