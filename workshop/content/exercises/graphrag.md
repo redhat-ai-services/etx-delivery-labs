@@ -12,7 +12,7 @@ cd workshop/files/graphrag/
 2. Start the Neo4j database, frontend and backend containers in a single pod. This may take a few minutes as the backend image is over 5GiB:
 
 ```sh
-./start-pods.sh
+./run-pods.sh
 ```
 
 3. Log into neo4j web UI at http://localhost:7474 . Then select `neo4j` for the Username, and `neo4j` as the password. Click `Connect`.
